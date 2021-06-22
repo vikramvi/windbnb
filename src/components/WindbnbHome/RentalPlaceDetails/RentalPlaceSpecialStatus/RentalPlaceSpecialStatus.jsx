@@ -1,7 +1,7 @@
-const RentalPlaceSpecialStatus = () => {
+const RentalPlaceSpecialStatus = ({ superHost }) => {
   return (
     <>
-      <span>super host</span>
+      <span>{superHost}</span>
     </>
   );
 };

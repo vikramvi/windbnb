@@ -1,7 +1,7 @@
-const RentalPlaceShortDescription = () => {
+const RentalPlaceShortDescription = ({ type }) => {
   return (
     <>
-      <span>Entire Apartment - 2 rooms</span>
+      <span>{type}</span>
     </>
   );
 };

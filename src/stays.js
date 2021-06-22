@@ -1,4 +1,4 @@
-[
+export const staysData = [
   {
     "city": "Helsinki",
     "country": "Finland",
@@ -153,4 +153,4 @@
     "beds": 3,
     "photo": "https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80"
   }
-]
+];

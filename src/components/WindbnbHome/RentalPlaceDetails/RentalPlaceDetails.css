@@ -1,4 +1,7 @@
 .RentalPlaceDetails {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

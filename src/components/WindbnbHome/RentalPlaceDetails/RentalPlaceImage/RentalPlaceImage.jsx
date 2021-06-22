@@ -1,13 +1,9 @@
 import "./RentalPlaceImage.css";
 
-const RentalPlaceImage = () => {
+const RentalPlaceImage = ({ image }) => {
   return (
     <>
-      <img
-        src="images/photo-1.jpeg"
-        alt="rental place"
-        className="propertyImage"
-      />
+      <img src={image} alt="rental place" className="propertyImage" />
     </>
   );
 };

@@ -1,8 +1,8 @@
-const RentalPlaceRating = () => {
+const RentalPlaceRating = ({ rating }) => {
   return (
     <>
       <span>star image</span>
-      <span>4.4</span>
+      <span>{rating}</span>
     </>
   );
 };

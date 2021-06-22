@@ -1,7 +1,7 @@
-const RentalPlaceLongDescription = () => {
+const RentalPlaceLongDescription = ({ title }) => {
   return (
     <>
-      <span>Stylish apartment in center of the city</span>
+      <span>{title}</span>
     </>
   );
 };
