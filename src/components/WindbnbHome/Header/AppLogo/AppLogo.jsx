@@ -1,7 +1,7 @@
 const AppLogo = () => {
   return (
     <>
-      <object data="images/logo.svg" aria-label="app logo" />
+      <object className="logo" data="images/logo.svg" aria-label="app logo" />
     </>
   );
 };

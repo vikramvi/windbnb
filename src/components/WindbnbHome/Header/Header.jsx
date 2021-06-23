@@ -3,14 +3,20 @@ import TopRightSection from "./TopRightSection";
 import RentalPlacesCity from "./RentalPlacesCity";
 import RentalTotalPlaces from "./RentalTotalPlaces";
 
+import "./Header.css";
+
 const Header = () => {
   return (
-    <>
-      <AppLogo />
-      <TopRightSection />
-      <RentalPlacesCity />
-      <RentalTotalPlaces />
-    </>
+    <div className="header">
+      <div className="header-first-row">
+        <AppLogo />
+        <TopRightSection />
+      </div>
+      <div className="header-second-row">
+        <RentalPlacesCity />
+        <RentalTotalPlaces />
+      </div>
+    </div>
   );
 };
 

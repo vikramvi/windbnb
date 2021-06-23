@@ -1,9 +1,7 @@
+import "./RentalPlacesCity.css";
+
 const RentalPlacesCity = () => {
-  return (
-    <>
-      <span>Stays in Finland</span>
-    </>
-  );
+  return <span className="staysIn">Stays in Finland</span>;
 };
 
 export default RentalPlacesCity;

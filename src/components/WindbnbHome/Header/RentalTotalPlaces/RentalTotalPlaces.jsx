@@ -1,9 +1,6 @@
+import "./RentalTotalPlaces.css";
 const RentalTotalPlaces = () => {
-  return (
-    <>
-      <span>12+ stays</span>
-    </>
-  );
+  return <span className="rentalPlacesTotalCount">12+ stays</span>;
 };
 
 export default RentalTotalPlaces;
