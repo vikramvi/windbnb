@@ -17,7 +17,7 @@ const RentalPlaceDetails = () => {
         })}
       </div> */}
 
-      {staysData.map((data, key) => {
+      {staysData.slice(0, 6).map((data, key) => {
         return (
           <div key={key}>
             <div>
