@@ -1,9 +1,7 @@
+import "./RentalPlaceShortDescription.css";
+
 const RentalPlaceShortDescription = ({ type }) => {
-  return (
-    <>
-      <span>{type}</span>
-    </>
-  );
+  return <span className="shortDescription">{type}</span>;
 };
 
 export default RentalPlaceShortDescription;

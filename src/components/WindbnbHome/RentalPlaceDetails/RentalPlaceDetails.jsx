@@ -6,9 +6,7 @@ import RentalPlaceRating from "./RentalPlaceRating";
 import RentalPlaceShortDescription from "./RentalPlaceShortDescription";
 import RentalPlaceSpecialStatus from "./RentalPlaceSpecialStatus";
 
-import { staysData } from "../../../stays.js";
-
-const RentalPlaceDetails = () => {
+const RentalPlaceDetails = ({ staysData }) => {
   return (
     <div className="RentalPlaceDetails">
       {/* <div>
@@ -17,15 +15,20 @@ const RentalPlaceDetails = () => {
         })}
       </div> */}
 
-      {staysData.slice(0, 6).map((data, key) => {
+      {staysData.map((data, key) => {
         return (
-          <div key={key}>
+          <div key={key} className="RentalPlace">
             <div>
               <RentalPlaceImage image={data.photo} />
             </div>
-            <RentalPlaceSpecialStatus superHost={data.superHost} />
-            <RentalPlaceShortDescription type={data.type} />
-            <RentalPlaceRating rating={data.rating} />
+            <div>
+              {/* {console.log(data.superHost)} */}
+              {data.superHost ? (
+                <RentalPlaceSpecialStatus superHost={data.superHost} />
+              ) : null}
+              <RentalPlaceShortDescription type={data.type} />
+              <RentalPlaceRating rating={data.rating} />
+            </div>
             <div>
               <RentalPlaceLongDescription title={data.title} />
             </div>

@@ -5,12 +5,12 @@ import RentalTotalPlaces from "./RentalTotalPlaces";
 
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ query, handleQuery }) => {
   return (
     <div className="header">
       <div className="header-first-row">
         <AppLogo />
-        <TopRightSection />
+        <TopRightSection query={query} handleQuery={handleQuery} />
       </div>
       <div className="header-second-row">
         <RentalPlacesCity />

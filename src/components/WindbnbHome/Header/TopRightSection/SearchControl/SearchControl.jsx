@@ -1,9 +1,13 @@
 import "./SearchControl.css";
 
-const SearchControl = () => {
+const SearchControl = ({ query, handleQuery }) => {
   return (
     <div className="searchByCity">
-      <input placeholder="Helsinki, Finland" />
+      <input
+        placeholder="Helsinki, Finland"
+        value={query}
+        onChange={handleQuery}
+      />
     </div>
   );
 };

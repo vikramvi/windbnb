@@ -1,9 +1,12 @@
+import StarIcon from "@material-ui/icons/Star";
+import "./RentalPlaceRating.css";
+
 const RentalPlaceRating = ({ rating }) => {
   return (
-    <>
-      <span>star image</span>
+    <div className="placeRating">
+      <StarIcon />
       <span>{rating}</span>
-    </>
+    </div>
   );
 };
 

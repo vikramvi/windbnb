@@ -1,7 +1,7 @@
 const RentalPlaceSpecialStatus = ({ superHost }) => {
   return (
     <>
-      <span>{superHost}</span>
+      <span>SUPER HOST</span>
     </>
   );
 };
