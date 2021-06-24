@@ -20,12 +20,16 @@ const WindbnbHome = () => {
     !query || item.city.toLowerCase().includes(query.toLowerCase());
 
   const filteredStaysData = staysData.filter(byQuery(query));
-  console.log("filteredStaysData " + JSON.stringify(filteredStaysData));
+  //console.log("filteredStaysData " + JSON.stringify(filteredStaysData));
 
   //JSX
   return (
     <>
-      <Header query={query} handleQuery={handleQuery} />
+      <Header
+        query={query}
+        handleQuery={handleQuery}
+        staysData={filteredStaysData}
+      />
       <RentalPlaceDetails staysData={filteredStaysData} />
       <Footer />
     </>

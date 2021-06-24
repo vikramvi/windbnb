@@ -5,7 +5,7 @@ import RentalTotalPlaces from "./RentalTotalPlaces";
 
 import "./Header.css";
 
-const Header = ({ query, handleQuery }) => {
+const Header = ({ query, handleQuery, staysData }) => {
   return (
     <div className="header">
       <div className="header-first-row">
@@ -14,7 +14,7 @@ const Header = ({ query, handleQuery }) => {
       </div>
       <div className="header-second-row">
         <RentalPlacesCity />
-        <RentalTotalPlaces />
+        <RentalTotalPlaces staysData={staysData} />
       </div>
     </div>
   );
